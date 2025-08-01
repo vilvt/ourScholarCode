@@ -19,7 +19,7 @@ classification_colors = {
 # Initialize Bridges
 bridges = Bridges(3, "vilvt", "1609338639449")
 bridges.set_title("NC Counties: Rural vs Suburban vs Urban, 2020")
-bridges.set_description("Color-coded by classification using ColorBrewer-style diverging scale. Rural: Blue-Green. Suburban: Light green-yellow. Urban: Brown.")
+bridges.set_description("Color-coded by classification using ColorBrewer-style diverging scale. Rural: Red. Suburban: Purple. Urban: Blue.")
 
 # Load North Carolina counties
 state_info = get_us_map_county_data(["North Carolina"], True)

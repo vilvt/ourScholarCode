@@ -17,7 +17,7 @@ classification_colors = {
 }
 
 # Initialize Bridges
-bridges = Bridges(3, "vilvt", "1609338639449")
+bridges = Bridges(assignment_num, username, apikey)
 bridges.set_title("NC Counties: Rural vs Suburban vs Urban, 2020")
 bridges.set_description("Color-coded by classification using ColorBrewer-style diverging scale. Rural: Red. Suburban: Purple. Urban: Blue.")
 
@@ -42,3 +42,4 @@ for state in state_info:
 my_map = USMap(state_info)
 bridges.set_data_structure(my_map)
 bridges.visualize()
+

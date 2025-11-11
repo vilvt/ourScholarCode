@@ -33,7 +33,7 @@ def get_color(val):
 
 
 # Initialize Bridges
-bridges = Bridges(5, "vilvt", "1609338639449")
+bridges = Bridges(assignment_num, username, apikey)
 bridges.set_title("NC Counties: 2024 Medicaid Enrollment Rate")
 bridges.set_description("Color-coded by percentage of population enrolled in Medicaid using ColorBrewer 5-blue scale.")
 
@@ -58,3 +58,4 @@ for state in state_info:
 my_map = USMap(state_info)
 bridges.set_data_structure(my_map)
 bridges.visualize()
+

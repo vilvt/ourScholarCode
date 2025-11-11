@@ -34,7 +34,7 @@ def get_color(val):
 
 
 # Initialize BRIDGES
-bridges = Bridges(4, "vilvt", "1609338639449")
+bridges = Bridges(assignment_num, username, apikey)
 bridges.set_title("NC Poverty Rates (<200%)")
 bridges.set_description("Percent of population under 200% of the poverty line.")
 
@@ -51,4 +51,5 @@ for state in states:
 map_obj = USMap(states)
 bridges.set_data_structure(map_obj)
 bridges.visualize()
+
 

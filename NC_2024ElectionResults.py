@@ -67,7 +67,7 @@ def make_map(year, assignment_num, df, state_info):
             county.stroke_color = Color(100, 100, 100)
 
     us_map = USMap(state_info)
-    bridges = Bridges(assignment_num, "vilvt", "1609338639449")
+    bridges = Bridges(assignment_num, username, apikey)
     bridges.set_title(f"NC {year} Presidential Election Results by County")
     bridges.set_description(
         "Map of North Carolina election results by county. "
@@ -89,5 +89,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 

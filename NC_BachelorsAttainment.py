@@ -40,7 +40,7 @@ def get_color(val):
         return color_scale[4]
 
 # Bridges
-bridges = Bridges(102, "vilvt", "1609338639449")
+bridges = Bridges(assignment_num, username, apikey)
 bridges.set_title("Bachelor’s Degree Attainment Rates in NC Counties")
 bridges.set_description(
     "This map visualizes the percentage of adults with a bachelor's degree by county in North Carolina."
@@ -61,5 +61,6 @@ for state in states:
 map_obj = USMap(states)
 bridges.set_data_structure(map_obj)
 bridges.visualize()
+
 
 
